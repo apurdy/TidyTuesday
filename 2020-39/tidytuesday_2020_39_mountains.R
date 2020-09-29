@@ -42,12 +42,12 @@ my_plot<- ggplot(clean_mountain, aes(x=decade, y=`TRUE`, fill=fct_reorder(peak_n
   scale_x_continuous(limits=c(1969, 2010),expand = c(0, 0))+
   scale_y_continuous(position = "right")+
   labs(
-    title = "Help! I've fallen and I can't get up",
+    title = "Help! I've fallen off Everest and I can't get up",
     subtitle = "Total injuries on 5 most popular Himalayan peaks by decade",
     caption = "Data: The Himalayan Database | Viz: @aarpurd"
   ) +
   theme(
-    plot.title = element_markdown(family = "mountain", color = "white",hjust=2, size = 130, margin=margin(l=-30,t=40,b=14)),
+    plot.title = element_markdown(family = "mountain", color = "white",hjust=-1, size = 100, margin=margin(l=20,t=40,b=14)),
     plot.subtitle = element_text(color="white",hjust=1, size = 35),
     plot.caption = element_text(size = 22, color="white", margin=margin(t=20)),
     panel.grid.major.x = element_blank(),
