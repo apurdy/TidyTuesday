@@ -96,7 +96,7 @@ my_chart2<- ggplot(beyonce_love, aes(x=0, y=countx, fill=love_check))+
   theme_void()+
   labs(
     #title = "",
-    subtitle = "Beyoncé"
+    subtitle = "BeyoncÃ©"
     #caption=""
   ) +
   theme(legend.position="none",
